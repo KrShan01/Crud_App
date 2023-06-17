@@ -1,18 +1,28 @@
 # Crud_App
 CRUD app built with react
 
-To set up and run a React application from a GitHub repository, follow these steps:
-1.	Clone the repository: Open your terminal or command prompt and navigate to the directory where you want to clone the repository. Then run the following command:
-                                                     git clone <repository_url>
-   Replace <repository_url> with the URL of the GitHub repository you want to clone.
+React Application Setup
+Follow these steps to set up and run the React application locally:
+
+#Prerequisites
+
+Make sure you have the following installed on your system:
+Node.js (version 12 or later)
+npm (Node Package Manager, comes with Node.js)
+
+1.Clone the Repository
+Clone the repository to your local machine using the following command:
+git clone https://github.com/your-username/your-repo.git
 
 
-2.	Install dependencies: Navigate into the cloned project folder using the cd command in your terminal. Once inside the project folder, run the following command to install the necessary 
-    dependencies:
-                                                          npm install
-    This command will install all the required dependencies specified in the package.json file.
-  	
+2.Navigate to the project directory:
+cd your-repo
 
-3.	Run the application: After the dependencies are installed, you can start the development server and run the application using the following command:
-                                                           npm start
-    This command will start the development server and launch the React application in your default web browser. You should be able to see your React application running.
+3.Install Dependencies
+Install the project dependencies using npm:
+npm install
+
+4.Start the Development Server
+Run the following command to start the development server:
+npm start
+The application will be running at http://localhost:3000.

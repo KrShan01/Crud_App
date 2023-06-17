@@ -1,0 +1,91 @@
+/* Form.css */
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fade-in 0.5s ease;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container label {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container input[type="tel"],
+  .form-container input[type="date"],
+  .form-container select {
+    padding: 10px;
+    border: none;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    box-shadow: inset 3px 3px 6px #e0e0e0, inset -3px -3px 6px #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form-container .gender-select {
+    width: 100%; /* Set the width to 100% for the gender select input */
+  }
+  
+  .form-container button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: blue;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px #b3b3b3, -3px -3px 6px #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .form-container .errors {
+    color: #ff0000 !important;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .edit-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .save-button{
+    padding: 8px 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .cancel-button {
+    padding: 8px 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }

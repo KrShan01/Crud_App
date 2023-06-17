@@ -4,27 +4,35 @@ import { Link } from "react-router-dom";
 import "./Table.css";
 
 const Table = ({ data, editData, deleteData }) => {
+  // State variables to track the index of the row being edited and the edited data
   const [editIndex, setEditIndex] = useState(null);
   const [editedData, setEditedData] = useState({});
 
+  // Handle the edit button click event
   const handleEdit = (index, rowData) => {
     setEditIndex(index);
     setEditedData(rowData);
   };
 
+  // Handle the save button click event
   const handleSave = (index) => {
-    editData(index, editedData);
+    editData(index, editedData); // Call the parent component's editData function to update the data
 
+    // Reset the edit index and edited data
     setEditIndex(null);
     setEditedData({});
   };
 
+  // Handle the cancel button click event
   const handleCancel = () => {
+    // Reset the edit index and edited data
     setEditIndex(null);
     setEditedData({});
   };
 
+  // Handle input change event in the edit mode
   const handleInputChange = (e) => {
+    // Update the edited data with the new input value
     setEditedData({ ...editedData, [e.target.name]: e.target.value });
   };
 

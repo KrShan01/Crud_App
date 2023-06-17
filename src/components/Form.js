@@ -4,8 +4,10 @@ import { useNavigate } from "react-router-dom";
 import "./Form.css";
 
 const Form = ({ addData }) => {
+  // Get the navigation function from react-router-dom
   const navigate = useNavigate();
 
+  // State to store form data and errors
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -19,16 +21,22 @@ const Form = ({ addData }) => {
 
   const [errors, setErrors] = useState({});
 
+  // Handle input change event
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Validate the form data
     const formErrors = validateForm(formData);
+
     if (Object.keys(formErrors).length > 0) {
+      // If there are errors, set the error state
       setErrors(formErrors);
     } else {
+      // If no errors, add the data, reset the form and errors, and navigate back to the table
       addData(formData);
       setFormData({
         firstName: "",

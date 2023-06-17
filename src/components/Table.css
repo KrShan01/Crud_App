@@ -1,7 +1,9 @@
+/* Styles for the table container */
 .table-container {
   padding: 20px;
 }
 
+/* Styles for the header container */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -9,10 +11,12 @@
   margin-bottom: 20px;
 }
 
+/* Styles for the heading inside the header container */
 .header-container h2 {
   margin: 0;
 }
 
+/* Styles for the "Add Profile" button */
 .add-profile-button {
   position: absolute;
   top: 0;
@@ -27,17 +31,20 @@
   font-weight: bold;
 }
 
+/* Styles for the table box */
 .table-box {
   border: 1px solid #ccc;
   border-radius: 4px;
   overflow: hidden;
 }
 
+/* Styles for the modern table */
 .modern-table {
   width: 100%;
   border-collapse: collapse;
 }
 
+/* Styles for the table header cells and table data cells */
 .modern-table th,
 .modern-table td {
   padding: 12px;
@@ -45,29 +52,35 @@
   border-bottom: 1px solid #ddd;
 }
 
+/* Styles for the table header cells */
 .modern-table th {
   background-color: #f2f2f2;
   color: #333;
 }
 
+/* Hover state styles for table rows */
 .modern-table tbody tr:hover {
   background-color: #f9f9f9;
 }
 
+/* Styles for the last cell in each table row */
 .modern-table td:last-child {
   text-align: center;
 }
 
+/* Styles for the edit and delete icons */
 .modern-table .edit-icon,
 .modern-table .delete-icon {
   cursor: pointer;
 }
 
+/* Styles for the edit icon */
 .modern-table .edit-icon {
   color: #007bff;
   margin-right: 8px;
 }
 
+/* Styles for the delete icon */
 .modern-table .delete-icon {
   color: #dc3545;
 }
